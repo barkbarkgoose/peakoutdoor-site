@@ -1,6 +1,7 @@
 # Project specific
 env/
-**/jake_template/
+**/jake_template/django_things/
+**/jake_template/README.md
 
 
 # Byte-compiled / optimized / DLL files
