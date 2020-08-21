@@ -1,0 +1,285 @@
+/* --------------------------------
+
+Jake Generic Stylesheet
+last updated 08/19/2020
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/***** stuff for slide up animation *****/
+.hide-down{
+  position: relative;
+  bottom: -300px;
+  opacity: 0;
+}
+.slide-up{
+  /* animation-delay: 1s; */
+  animation-duration: 1.5s;
+  animation-name: slideup;
+  animation-fill-mode: forwards;
+}
+@keyframes slideup {
+  0%{
+    bottom: -300px;
+    opacity: .5;
+  }
+  70%{
+    opacity: .5;
+  }
+  100%{
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/*************************************/
+/***** stuff for slide right animation *****/
+.hide-left{
+  position: relative;
+  left: -1000px;
+}
+
+.slide-right{
+  /* animation-delay: 0.25s; */
+  animation-duration: 1.5s;
+  animation-name: slideright;
+  animation-fill-mode: forwards;
+}
+@keyframes slideright{
+  from{
+    left: -1000px;
+  }
+  to{
+    left: 0;
+  }
+}
+
+/*************************************/
+/***** inline text styling *****/
+.underline{
+    border-bottom: solid 2px black;
+    display: inline;
+    padding-bottom: 3px;
+}
+
+/*************************************/
+/***** coloring *****/
+.white{
+  color: white;
+}
+.dark{
+    color: #111214;
+}
+.fp-orange{
+  color: #f7882f;
+}
+.fp-blue{
+  color: rgb(55,81,103);
+}
+
+
+
+/*************************************/
+/***** image and background *****/
+
+.title-icon{
+  margin: auto 0;
+  font-size: 75px;
+  color: #F7882F!important;
+}
+.darken-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.trans-background-white{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border-radius: 30px;
+    background-color: rgba(250,250,250,0.5);
+}
+.grey-background{
+    background-color: rgba(150,150,150, 0.1);
+}
+
+
+/*************************************/
+/***** content positioning *****/
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+.float-left{
+    float: left;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.padd-vert{
+  padding: 10px 0;
+}
+.percentmarg-10{
+  margin: 10%;
+}
+.top-padd-50px{
+  padding-top: 50px;
+}
+.percentpadd-2{
+  padding: 2%;
+}
+.percentpaddvert-5{
+  padding: 5% 0;
+}
+.percentpaddvert-2{
+  padding: 2% 0;
+}
+.percentmargvert-5{
+  margin: 5% 0;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.side-padding{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.side-padd-perc-10{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.vert-padding{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*************************************/
+/***** content sizing *****/
+
+.horiz-30-marg-3{
+  height: 100%;
+  width: 30%;
+  margin: 0 1.665%;
+  float: left;
+}
+.auto-width{
+  float: left;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.auto-width {
+  float: left;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex {
+    overflow-x: auto;
+    display: flex;
+}
+.wrapp-1100{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.full-span{
+  width: 100%;
+  overflow: hidden;
+}
+.fit-content{
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+}
+.horiz-33{
+  width: 33.33%;
+  float: left;
+}
+.horiz-66{
+  width: 66.66%;
+  float: left;
+}
+.horiz-50{
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 730px){
+  .horiz-33, .horiz-66, .horiz-50{
+    width: 100%;
+  }
+}
+
+/* ...for small screens... */
+@media screen and (max-width: 750px){
+  .horiz-33, .horiz-66, .horiz-50{
+    width: 100%;
+    display: block;
+  }
+  .smlscreen-hide{
+    display: none;
+  }
+  .horiz-66{
+    /* specific to welcome page */
+    text-align: center;
+    margin: 15px auto;;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px){
+  .horiz-50{
+    width: 100%;
+    display: block;
+  }
+  horiz-50{
+    min-height: 50px;
+  }
+}
+
+
+/**********************************/
+/***** static scroll button *****/
+#scrollBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  /* background-color: orange; */
+  background-color: rgba(55,81,103,0.7);
+  /* background-color: rgba(0,0,0,0.1); */
+  /* color: white; /* Text color */
+  color: #a7a8aa;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollBtn:hover {
+  /* background-color: #555; */
+  transform: scale(1.3);
+  z-index: 1;
+  transition: all 0.5s ease 0s;
+  color: #F7882F;
+}
