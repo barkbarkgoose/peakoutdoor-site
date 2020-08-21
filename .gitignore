@@ -1,6 +1,6 @@
 # Project specific
 env/
-
+**/jake_template/
 
 
 # Byte-compiled / optimized / DLL files
