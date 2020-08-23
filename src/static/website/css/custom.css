@@ -1,10 +1,30 @@
+nav{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
 .masthead {
   height: 100vh;
   min-height: 500px;
   /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
+  background-image: linear-gradient(to right,
+    rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+    url("../img/arch.jpg");
+  );
+
+  /* background-color: rgba(47,79,79, 0.1); */
+  /* filter: brightness(50%); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.masthead .container .row{
   background-image: url("../img/logos/logo_POA_redorange_gaps_trans.png");
-  background-color: darkslategrey;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 2;
 }
