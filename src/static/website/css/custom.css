@@ -1,0 +1,10 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
+  background-image: url("../img/logos/logo_POA_redorange_gaps_trans.png");
+  background-color: darkslategrey;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -28,7 +28,7 @@ class DictToClass:
 # ---------------------------------- VIEWS -------------------------------------
 # Create your views here.
 def index(request):
-    return render(request, 'main/index.html')
+    return render(request, 'website/home-base.html')
 
 
 
