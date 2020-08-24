@@ -1,5 +1,6 @@
 # Project specific
 passenger_wsgi.py
+**settings.copy.py
 **settings.py
 env/
 **/jake_template/django_things/
