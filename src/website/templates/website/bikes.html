@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% extends "website/base.html" %}
+{% load static %}
+{% static "" as baseUrl %}
+{% block content %}
+
+<!-- custom page css ond js here -->
+<!-- <link rel="stylesheet" href="{% static 'link_custom_css_here' %}"> -->
+
+<div id="bikes-page" class="wrapper side-padding">
+    <!--****************************** top row ******************************-->
+    <div id="bikepage-header" class="row bike-background parallax">
+        <div class="container">
+            <div class="col-sm-8 centered top-padd-5">
+                <h1>Mountain Bike Rentals</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--*************************** bike box row1 ***************************-->
+    <div id="bikerow1" class="row bikerow">
+        <div class="col-sm-6 bike-box">
+            <div class="container top-padd-5">
+                <h2 class="text-center">Hard Tail</h2>
+            </div>
+        </div>
+        <div class="col-sm-6 bike-box col-sm-max parallax">
+            <div class="container top-padd-5">
+                <h2 class="text-center">Full Suspension</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--*************************** bike box row2 ***************************-->
+    <div id="bikerow2" class="row bikerow">
+        <div class="col-sm-6 bike-box col-sm-min parallax">
+            <div class="container top-padd-5">
+                <h2 class="text-center">Fat Tire</h2>
+            </div>
+        </div>
+        <div class="col-sm-6 bike-box col-sm-min col-sm-max parallax">
+            <div class="container top-padd-5">
+                <h2 class="text-center">e-Bike</h2>
+                <h6 class="text-center">(Full Suspension)</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

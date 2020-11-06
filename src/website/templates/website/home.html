@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% extends 'website/base.html' %}
+{% load static %}
+{% static "" as baseUrl %}
+{% block content %}
+  <!-- Full Page Image Header with Vertically Centered Content -->
+<div id="home-page">
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <!-- <div class="col-12 text-center">
+          <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+          <p class="lead">A great starter layout for a landing page</p>
+        </div> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="font-weight-light">About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab
+        nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda
+        aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit
+        expedita.
+      </p>
+    </div>
+  </section>
+
+  <!-- <section class="py-5">
+    <div class="container">
+      <div class="row">
+        {% include 'website/includes/modals/bike-modal.html' %}
+      </div>
+    </div>
+  </section> -->
+
+  {% include 'website/includes/modals/bike-modal.html' %}
+  {% include 'website/includes/modals/paddle-modal.html' %}
+
+  <section class="py-5">
+    <!-- Page Content -->
+    <div class="container">
+      <!-- Page Heading -->
+      <h1 class="my-4 text-center">
+        Section Heading
+      </h1>
+      <div id="rental-type-row" class="row">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <a href="#modal-container-bike" role="button" data-toggle="modal" class="rental-type"
+              style="background-image: url({% static 'website/img/biking/pexels-bike-holding.jpg' %})"
+            >
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                Mountain Bike Rentals
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+                euismod odio, gravida pellentesque urna varius vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <a href="#modal-container-paddle" role="button" data-toggle="modal" class="rental-type"
+              style="background-image: url({% static 'website/img/arch.jpg' %})"
+            >
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                Paddle Board Rentals
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+                aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita,
+                aliquid optio, alias illum eaque. Non magni, voluptates quae,
+                necessitatibus unde temporibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <a href="#" class="rental-type"
+              style="background-image: url({% static 'website/img/winter/snowshoe.jpg' %})"
+            >
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Winter Rentals</a>
+              </h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+                euismod odio, gravida pellentesque urna varius vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    {% include 'website/includes/home/carousel.html' %}
+  </section>
+</div>
+{% endblock %}

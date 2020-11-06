@@ -26,11 +26,17 @@ class DictToClass:
 
 
 # ---------------------------------- VIEWS -------------------------------------
-# Create your views here.
+# --- home/index page ---
 def index(request):
-    return render(request, 'website/base.html')
+    return render(request, 'website/home.html')
 
+# --- bikes page ---
+def bikes(request):
+    return render(request, 'website/bikes.html')
 
+# --- pricing page ---
+def pricing(request):
+    return render(request, 'website/pricing.html')
 
 
 

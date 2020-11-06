@@ -14,7 +14,9 @@ urlpatterns = [
     # url(r'^login/$', auth_views.LoginView.as_view(template_name='support/login.html')),
     # url(r'^.*$', RedirectView.as_view(url='login', permanent=False), name='index')
 
-    url(r'^$', views.index, name = 'index'),
+    path(r'', views.index, name = 'index'),
+    path('bikes/', views.bikes, name = 'bikes'),
+    path('pricing/', views.pricing, name = 'pricing'),
     ### url(r'^signup/(?P<comp>\w+)$', views.signup, name = 'signup'), #example of url with key
 ]
 

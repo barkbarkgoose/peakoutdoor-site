@@ -1,16 +1,17 @@
-nav{
+/* .navbar{
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 10;
-}
+} */
 
-.masthead {
+#home-page .masthead {
   height: 100vh;
   min-height: 500px;
   /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
   background-image: linear-gradient(to right,
-    rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+    /* rgba(255,255,255,0.3), rgba(255,255,255,0.3)), */
+    rgba(0,0,0,.1), rgba(0,0,0,.1)),
     url("../img/arch.jpg");
   );
 
@@ -21,10 +22,73 @@ nav{
   background-repeat: no-repeat;
 }
 
-.masthead .container .row{
-  background-image: url("../img/logos/logo_POA_redorange_gaps_trans.png");
+#home-page .masthead .container .row{
+  background-image: url("../img/logos/logo_PNG_white.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
+}
+
+#peakoutdoor .rental-type{
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+#peakoutdoor .bike-box .container{
+    min-height: 200px;
+}
+
+/****************************** bikes page stuff ******************************/
+#bikes-page{
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+}
+#bikes-page h1, #bikes-page h2, #bikes-page h3,
+#bikes-page h4, #bikes-page h5, #bikes-page h6{
+    /* font-size: 2em; */
+}
+#bikes-page .bike-background{
+    background-image: linear-gradient(to right,
+        rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+        /* rgba(0,0,0,.1), rgba(0,0,0,.1)), */
+        url("../img/biking/mtn-bking-feature.jpg");
+    color: black;
+}
+#bikepage-header{
+    min-height: 50%;
+}
+#bikes-page .bikerow{
+    min-height: 25%;
+}
+#bikes-page .top-padd-5{
+    padding-top: 5%;
+}
+
+/* media queries for bikes page */
+@media (max-width: 576px) {
+    /* apply when screen size is smaller than 576px */
+    #bikes-page .col-sm-max {
+        background-image: linear-gradient(to right,
+            rgba(255,255,255,0.3 ), rgba(255,255,255,0.3)),
+            /* rgba(0,0,0,.1), rgba(0,0,0,.1)), */
+            url("../img/biking/mtn-bking-feature.jpg");
+        color: black;
+    }
+    #bikes-page .col-sm-min{
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 576px) {
+    /* apply when screen size is larger than 576px */
+    #bikes-page .col-sm-min {
+        background-image: linear-gradient(to right,
+            rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+            /* rgba(0,0,0,.1), rgba(0,0,0,.1)), */
+            url("../img/biking/mtn-bking-feature.jpg");
+        color: black;
+    }
 }
