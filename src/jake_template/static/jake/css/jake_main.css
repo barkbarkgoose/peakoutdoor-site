@@ -107,17 +107,13 @@ html, body{
 .grey-background{
     background-color: rgba(150,150,150, 0.1);
 }
-.parallax{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
+
 
 /*************************************/
 /***** content positioning *****/
-
+.block-center{
+    margin: 0 auto;
+}
 .centered {
   text-align: center;
   margin: 0 auto;
@@ -169,6 +165,17 @@ html, body{
 .vert-padding{
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.vertical-center-wrapper{
+    /*
+    this will take 100% of the parent div's height
+    (the parent div needs a set height as well)
+    */
+    height: 100%;
+}
+.vertical-center-content{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*************************************/

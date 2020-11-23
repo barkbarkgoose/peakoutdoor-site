@@ -1,6 +1,10 @@
 ___Pricing___:
 hard tail 25/day
 full suspension 40/day
-
 fat bike 35/day
 e-bike full suspension 60/day
+
+motobecane:
+	hal ebooost
+	hal 29 er
+	nighttrain bullet (fat tire)

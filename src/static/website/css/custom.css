@@ -40,6 +40,49 @@
     min-height: 200px;
 }
 
+#peakoutdoor .emphasis{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+#rental-image{
+    height: 200px;
+    background-image: linear-gradient(to right,
+      /* rgba(255,255,255,0.3), rgba(255,255,255,0.3)), */
+      rgba(255,255,255,1),
+      rgba(255,255,255,.9),
+      rgba(255,255,255,0),
+      rgba(255,255,255,.9),
+      rgba(255,255,255,1)),
+      url("../img/biking/pexels-bike-holding.jpg");
+    );
+    /* background-image: url(../img/biking/pexels-bike-holding.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+#bike-list .row .col{
+
+}
+
+@media (min-width: 960px){
+    #bike-list .bike-stats{
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+#bike-list .bike-image{
+    min-height: 200px;
+    min-width: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 /****************************** bikes page stuff ******************************/
 #bikes-page{
     height: 100%;
