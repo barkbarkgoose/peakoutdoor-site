@@ -4,6 +4,9 @@
   width: 100%;
   z-index: 10;
 } */
+body{
+    font-size: 1.5em;
+}
 
 #home-page .masthead {
   height: 100vh;
@@ -49,17 +52,15 @@
 #rental-image{
     height: 200px;
     background-image: linear-gradient(to right,
-      /* rgba(255,255,255,0.3), rgba(255,255,255,0.3)), */
       rgba(255,255,255,1),
-      rgba(255,255,255,.9),
       rgba(255,255,255,0),
-      rgba(255,255,255,.9),
       rgba(255,255,255,1)),
       url("../img/biking/pexels-bike-holding.jpg");
     );
     /* background-image: url(../img/biking/pexels-bike-holding.jpg); */
     background-position: center;
     background-size: cover;
+    border-radius: 15px;
 }
 
 #bike-list .row .col{
@@ -79,6 +80,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 

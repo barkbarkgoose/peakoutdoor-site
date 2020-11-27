@@ -3,9 +3,12 @@ passenger_wsgi.py
 **settings.copy.py
 **settings.py
 env/
+**env
 **/jake_template/django_things/
 **/jake_template/README.md
 
+# windows and google drive
+**desktop.ini
 
 # Byte-compiled / optimized / DLL files
 *.pyc
