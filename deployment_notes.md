@@ -1,8 +1,8 @@
-#notes:
+# notes:
 python version needs to be 3.7 on hosting (i thought it was 3.6 locally but wont
 work on that
 
-#where files are stored (gdrive and github):
+# where files are stored (gdrive and github):
 website files (on google drive) located at
 C:\Users\jaket\Google Drive\work\allbarker\clients\peakoutdooradv\website\website
 
